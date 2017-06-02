@@ -96,24 +96,27 @@
                 android:id="@+id/rgTamanhoPizza"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
-
                 <RadioButton
+                    android:id="@+id/rbPequena"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="@string/txt_pizza_pequena"/>
-
                 <RadioButton
+                    android:id="@+id/rbMedia"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="@string/txt_pizza_media"/>
 
                 <RadioButton
+                    android:id="@+id/rbGrande"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="false"
                     android:text="@string/txt_pizza_grande"/>
+
+
             </RadioGroup>
         </LinearLayout>
 
@@ -156,6 +159,7 @@
                     android:text="@string/txt_borda_recheada"/>
 
                 <CheckBox
+                    android:id="@+id/cbRecheioExtra"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
@@ -169,6 +173,7 @@
                 android:orientation="horizontal">
 
                 <CheckBox
+                    android:id="@+id/cbRefrigerante"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
@@ -176,6 +181,7 @@
                     android:text="@string/txt_refrigerante"/>
 
                 <CheckBox
+                    android:id="@+id/cbSobremesa"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"

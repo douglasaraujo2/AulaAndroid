@@ -18,13 +18,13 @@
         android:text="@string/login_text" />
 
     <android.support.design.widget.TextInputLayout
-        android:id="@+id/tilSenha"
+        android:id="@+id/tilogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/magin_element">
 
         <EditText
-            android:id="@+id/etSenha"
+            android:id="@+id/etLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/hint_login" />
@@ -37,12 +37,12 @@
         android:text="@string/senha_text" />
 
     <android.support.design.widget.TextInputLayout
-        android:id="@+id/tilLogin"
+        android:id="@+id/tilSenha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/magin_element">
         <EditText
-            android:id="@+id/etLogin"
+            android:id="@+id/etSenha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/hint_login" />
@@ -50,5 +50,6 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/text_logar"/>
+        android:text="@string/text_logar"
+        android:onClick="logar"/>
 </LinearLayout>
