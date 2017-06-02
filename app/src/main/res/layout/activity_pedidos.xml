@@ -22,14 +22,14 @@
             android:gravity="right"
             android:paddingTop="16dp"
             android:text="@string/txt_saudacao"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tvPizza"
+            style="@style/AppTheme.Header"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/txt_escolha_pizza"
-            style="@style/AppTheme.Header"/>
+            android:text="@string/txt_escolha_pizza" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -47,7 +47,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
                     android:checked="false"
-                    android:text="@string/txt_pizza_atum"/>
+                    android:text="@string/txt_pizza_atum" />
 
                 <CheckBox
                     android:id="@+id/cbBacon"
@@ -55,36 +55,37 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
                     android:checked="false"
-                    android:text="@string/txt_pizza_bacon"/>
+                    android:text="@string/txt_pizza_bacon" />
             </LinearLayout>
+        </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <CheckBox
-                    android:id="@+id/cbCalabresa"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.5"
-                    android:checked="false"
-                    android:text="@string/txt_pizza_calabresa"/>
-
-                <CheckBox
-                    android:id="@+id/cbMussarela"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.5"
-                    android:checked="false"
-                    android:text="@string/txt_pizza_mussarela"/>
-        </ LinearLayout>
-
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/txt_tamanho_pizza"
-            style="@style/AppTheme.Header"/>
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cbCalabresa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:checked="false"
+                android:text="@string/txt_pizza_calabresa" />
+
+            <CheckBox
+                android:id="@+id/cbMussarela"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:checked="false"
+                android:text="@string/txt_pizza_mussarela" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/AppTheme.Header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_tamanho_pizza" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -95,25 +96,27 @@
                 android:id="@+id/rgTamanhoPizza"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
+
                 <RadioButton
                     android:id="@+id/rbPequena"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="false"
-                    android:text="@string/txt_pizza_pequena"/>
+                    android:text="@string/txt_pizza_pequena" />
+
                 <RadioButton
                     android:id="@+id/rbMedia"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="false"
-                    android:text="@string/txt_pizza_media"/>
+                    android:text="@string/txt_pizza_media" />
 
                 <RadioButton
                     android:id="@+id/rbGrande"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="false"
-                    android:text="@string/txt_pizza_grande"/>
+                    android:text="@string/txt_pizza_grande" />
 
 
             </RadioGroup>
@@ -121,23 +124,23 @@
 
         <TextView
             android:id="@+id/tvFormaPagamento"
+            style="@style/AppTheme.Header"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/txt_forma_pagamento"
-            style="@style/AppTheme.Header"/>
+            android:text="@string/txt_forma_pagamento" />
 
         <Spinner
             android:id="@+id/spPagamentos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:entries="@array/opcoes_pagamentos"/>
+            android:entries="@array/opcoes_pagamentos" />
 
         <TextView
+            style="@style/AppTheme.Header"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/txt_extras"
-            style="@style/AppTheme.Header"/>
+            android:text="@string/txt_extras" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -155,7 +158,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
                     android:checked="false"
-                    android:text="@string/txt_borda_recheada"/>
+                    android:text="@string/txt_borda_recheada" />
 
                 <CheckBox
                     android:id="@+id/cbRecheioExtra"
@@ -163,8 +166,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
                     android:checked="false"
-                    android:text="@string/txt_recheio_extra"/>
-            </ LinearLayout>
+                    android:text="@string/txt_recheio_extra" />
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -177,7 +180,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
                     android:checked="false"
-                    android:text="@string/txt_refrigerante"/>
+                    android:text="@string/txt_refrigerante" />
 
                 <CheckBox
                     android:id="@+id/cbSobremesa"
@@ -185,16 +188,17 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
                     android:checked="false"
-                    android:text="@string/txt_sobremesa"/>
+                    android:text="@string/txt_sobremesa" />
             </LinearLayout>
         </LinearLayout>
-
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:onClick="calcular"
-            android:text="@string/txt_calcular"/>
-    </ LinearLayout>
-</ ScrollView>
+            android:text="@string/txt_calcular" />
+    </LinearLayout>
+
+
+</ScrollView>
