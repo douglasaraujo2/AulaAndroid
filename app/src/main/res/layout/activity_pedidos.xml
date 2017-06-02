@@ -78,7 +78,6 @@
                     android:layout_weight="0.5"
                     android:checked="false"
                     android:text="@string/txt_pizza_mussarela"/>
-            </ LinearLayout>
         </ LinearLayout>
 
         <TextView
