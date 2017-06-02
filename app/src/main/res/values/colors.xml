@@ -10,4 +10,5 @@
     <color name="divider">#BDBDBD</color>
     <color name="background_splash">#FFFFFF</color>
     <color name="cor_titulo">#1c3999</color>
+    <color name="colorText">#cc5fe123</color>
 </resources>

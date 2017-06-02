@@ -7,6 +7,7 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
     <style name="loginHeader" parent="AppTheme">
         <item name="android:layout_width">match_parent</item>,
         <item name="android:layout_height">wrap_content</item>
@@ -14,5 +15,14 @@
         <item name="android:textSize">@dimen/tamanho_titulo</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/cor_titulo</item>
+    </style>
+
+    <style name="AppTheme.Header">
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:padding">@dimen/padding_padrao</ item >
+        <item name="android:textStyle">bold</ item >
+        <item name="android:textColor">@color/colorText</ item >
+        <item name="android:layout_marginBottom">@dimen/padding_padrao</ item >
+        <item name="android:layout_marginTop">@dimen/padding_padrao</ item >
     </style>
 </resources>
