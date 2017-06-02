@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PizzariaTradicao</string>
+    <string name="app_name">Pizzaria Tradição</string>
     <string name="login_text">Login</string>
     <string name="hint_login">Digite seu Login</string>
     <string name="senha_text">Senha</string>

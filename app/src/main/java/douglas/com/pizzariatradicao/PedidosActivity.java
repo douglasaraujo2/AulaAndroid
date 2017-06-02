@@ -48,7 +48,14 @@ public class PedidosActivity extends AppCompatActivity {
         //Alterar o texto de boas vindas
         tvUsuario.setText("Olá " + usuario);
     }
-
+    private String formatDecimal(double number) {
+        float epsilon = 0.004f; // 4 tenths of a cent
+        if (Math.abs(Math.round(number) - number) < epsilon) {
+            return String.format("%10.0f", number); // sdb
+        } else {
+            return String.format("%10.2f", number); // dj_segfault
+        }
+    }
     public void calcular(View view) {
 
 
@@ -97,7 +104,7 @@ public class PedidosActivity extends AppCompatActivity {
         //Exibir a confirmação do pedido
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
         alert.setTitle("Confirmação");
-        alert.setMessage("Valor: " + valor + " \n Pagamento: " + pagamento);
+        alert.setMessage("Valor: " + formatDecimal(valor) + " \n Pagamento: " + pagamento);
         alert.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {

@@ -24,7 +24,7 @@ public class LoginActivity extends AppCompatActivity {
     public void logar(View view) {
         String login = tilLogin.getEditText().getText().toString();
         String senha = tilSenha.getEditText().getText().toString();
-        if (login.toLowerCase() == "douglas" && senha.toLowerCase() == "teste"){
+        if (login.toLowerCase().equals("douglas") && senha.toLowerCase().equals("teste")){
             Intent intent = new Intent(this,PedidosActivity.class);
             intent.putExtra("usuario",login);
             startActivity(intent);
