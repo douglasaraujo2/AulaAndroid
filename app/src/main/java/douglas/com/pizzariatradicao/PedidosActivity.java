@@ -57,7 +57,7 @@ public class PedidosActivity extends AppCompatActivity {
         }
     }
     public void calcular(View view) {
-        //calcular
+        //calcular total
 
         //Recuperar o ID do RadioButton Selecionado
         int idSelecionado = rgTamanhoPizza.getCheckedRadioButtonId();
