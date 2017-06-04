@@ -45,11 +45,11 @@
             android:id="@+id/etSenha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/hint_login" />
+            android:hint="@string/senha_text" />
     </android.support.design.widget.TextInputLayout>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/text_logar"
-        android:onClick="logar"/>
+        android:onClick="logar"
+        android:text="@string/text_logar"/>
 </LinearLayout>
